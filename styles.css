@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*General Styles*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%;  /*To convert 1rem into 10px*/
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Navbar*/
+.navbar{
+    background-color:rgba(84, 140, 168, 0.7);
+    box-shadow: 2rem 2rem 2rem #555;
+    border-bottom: .2rem solid #fff;
+}
+
+.navbar-link{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    padding: .2rem;
+    position: relative;
+    padding: 1rem;
+    transition: color .2s;
+}
+
+.navbar-link:hover{
+    color:#FFAA4C;
+}
+
+.navbar-link::before{
+    content:"";
+    position: absolute;
+    width:0;
+    background-color: #FFAA4C;
+    height: .2rem;
+    right: -15%;
+    bottom: 0.5rem;
+    transition: width 0.2s;
+}
+ .navbar-link:hover::before{
+    width:130%;
+}
+
+/*End of Navbar*/
+
+/*Hero Section*/
+.hero-section{
+    height: 95vh;
+    width: 100%;
+    background: url(Images/19566\ \(1\).jpg) center no-repeat; /*Image source <a href="https://www.freepik.com/vectors/background">Background vector created by pikisuperstar - www.freepik.com</a>*/
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title{
+    font-size: 6rem;
+    font-weight: 700;
+    background-color:rgb(188, 217, 225);
+    border-radius: 20px;
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: .3rem solid #fff;
+    text-shadow: .2rem .2rem 1rem #555;
+    transform: skew(-10deg);
+}
+
+.hero-img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius:50%;
+    border: .3rem dotted rgb(188, 217, 225);
+    background-color: rgb(188, 217, 225,.7);
+    padding: .5rem;
+    opacity: .9;
+}
+
+.hero-name{
+    font-size: 2rem;
+    background-color:rgb(188, 217, 225);
+    border-bottom: .3rem solid #fff;
+    font-weight: 700;
+    margin: 5rem 0;
+    padding: .5rem 3rem;
+    letter-spacing: .3rem;
+    transform: skew(-10deg);
+    text-shadow: .2rem .2rem 1rem #555;
+    border-radius: 5px;
+}
+
+
+.hero-btn{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color:white;
+    background-color:rgba(84, 140, 168, 0.7);
+    border: .2rem solid rgb(255, 255, 255, 1);
+    padding: .7rem 2rem;
+    text-transform:uppercase ;
+    letter-spacing: .3rem;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.hero-btn:hover{
+    background-color: #FFAA4C;
+    border: .2rem solid #FFAA4C;
+    transform: skew(-10deg);
+}
+/*End of Hero Section*/
+
